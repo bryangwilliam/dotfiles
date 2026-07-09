@@ -47,3 +47,7 @@ vim.opt.linebreak = true                                      -- Wrap at word bo
 vim.opt.breakindent = true                                    -- Indent wrapped continuation lines to align with their logical start
 vim.opt.list = true                                           -- Render invisible characters defined in listchars
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }   -- Visible markers for tabs, trailing spaces, and non-breaking spaces
+
+-- Project-specific configuration
+vim.opt.exrc = true                                           -- Enable loading of project-specific .nvim.lua, .nvimrc, or .exrc files
+vim.opt.secure = true                                         -- Ensure secure evaluation (prompt user to trust new/modified files)
